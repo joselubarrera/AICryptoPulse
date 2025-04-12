@@ -12,8 +12,8 @@ This project provides a pipeline for predicting cryptocurrency prices and offeri
 
 - **main.py**: Contains the Gradio interface that serves as the frontend for users to input their queries. See [main.py].
 - **utils/**
-  - **llm.py**: Handles LLM interactions using the Gemini API to generate predictions and recommendations.
-  - **forecasting.py**: Contains functions for training the forecasting model using Darts package and creating forecast plots.
+  - **llm.py**: Handles LLM interactions using the Gemini API to strucure user query and generate recommendations.
+  - **forecasting.py**: Contains functions for training the N-HiTS forecasting model using Darts package and creating forecast plots.
   - **data.py**: Provides functions to download and process cryptocurrency data using Yahoo Finance.
 - **Forecasts/**: Directory where forecast plots are saved.
 - **.env**: Environment file for storing sensitive credentials (e.g., Gemini API key). See [`.env.example`] for guidance.
