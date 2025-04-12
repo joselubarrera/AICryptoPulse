@@ -1,9 +1,3 @@
----
-noteId: "687b098017a211f0992dcdf6797d16cf"
-tags: []
-
----
-
 # AICryptoPulse: Crypto Prediction and Recommendation using N-HiTS and Gemini
 
 This project provides a pipeline for predicting cryptocurrency prices and offering investment recommendations using N-HiTS forecasting and Gemini API.
