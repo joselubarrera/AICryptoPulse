@@ -13,11 +13,15 @@ def train_predict_model(time_series: TimeSeries, prediction_days: int):
     train_scaler = Scaler()
     scaled_train = train_scaler.fit_transform(train)
     nhits = NHiTSModel(
-        input_chunk_length=60,
-        output_chunk_length=90,
-        random_state=42
+        input_chunk_length=90,
+        output_chunk_length=30,
+        random_state=42,
+        num_stacks = 4,
+        num_blocks = 3,
+        num_layers = 3
     )
-    nhits.fit(scaled_train, epochs=50, verbose=False)
+
+    nhits.fit(scaled_train, epochs=30)
     forecast = nhits.predict(n=prediction_days)
     return train_scaler.inverse_transform(forecast)
 
