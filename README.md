@@ -54,7 +54,7 @@ This project provides a pipeline for predicting cryptocurrency prices and offeri
 
 ## Usage
 
-1. **Run the Gradio interfaz:**
+1. **Run the Gradio interface:**
 
     ```sh
     python main.py
