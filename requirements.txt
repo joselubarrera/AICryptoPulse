@@ -1,0 +1,9 @@
+numpy
+python-dotenv
+gradio
+yfinance
+matplotlib
+Pillow
+darts[all]
+google-genai
+pandas
