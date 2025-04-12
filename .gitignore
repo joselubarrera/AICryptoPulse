@@ -1,4 +1,5 @@
 .env
 Forecasts
 utils/__pycache__
+test/__pycache__
 .notebook
