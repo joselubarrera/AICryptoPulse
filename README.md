@@ -56,4 +56,35 @@ This project provides a pipeline for predicting cryptocurrency prices and offeri
 
 2. Once the application is running, a local web interface will open automatically. Enter your query for a cryptocurrency prediction and recommendation and click `submit`.
 
+## Examples of Use
 
+You can ask investment strategy questions like:
+- "I have 1000€ to invest in Bitcoin. What's the best strategy to maximize profits in the next 30 days?"
+- "I'm holding Ethereum. Should I sell or hold based on the next 2 weeks prediction?"
+- "I need to recover from a 20% loss in Bitcoin. What strategy do you recommend for the next 60 days?"
+
+## Testing
+
+You can run the model evaluation script for BTC-USD values:
+
+```sh
+python test/nhits_BTC-USD.py
+```
+
+This will generate performance metrics including MAPE, correlation, and MPE.
+
+### Model Performance Metrics
+
+| Metric | Value |
+|--------|-------|
+| MAPE | 5.72% |
+| Correlation | 0.8671 |
+| MPE | 5.24% |
+
+- **MAPE**: Mean Absolute Percentage Error (lower is better)
+- **Correlation**: Pearson correlation between predicted and actual values (closer to 1 is better)
+- **MPE**: Mean Percentage Error (measures prediction bias)
+
+## License
+
+This project is open source and available under the MIT License.
